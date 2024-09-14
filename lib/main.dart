@@ -66,10 +66,9 @@ class _HomeScreenState extends State<HomeScreen> {
                     image: AssetImage(listOfImgPath[index]),
                     fit: BoxFit.cover,
                   ),
-                  header: Container(
-                    color: Colors.black54,
-                    height: 38,
-                    child: Center(
+                  header: GridTileBar(
+                    backgroundColor: Colors.black54,
+                    title: Center(
                       child: Text(
                         "Image ${index + 1}",
                         style: TextStyle(
